@@ -30,3 +30,5 @@ config.json
 
 # Release files
 factorio-bot-js.*
+deploy.sh
+.idea/
