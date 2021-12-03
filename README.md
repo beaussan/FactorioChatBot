@@ -1,19 +1,22 @@
 # Factorio Chat Bot
+
 Two-Directional chat bot connecting Discord and Factorio chats together, written in nodejs.
 [Examples](https://github.com/AGuyNamedJens/FactorioChatBot/blob/master/EXAMPLES.md)
 
 This bot does **not**:
+
 - Disable Achievements unless specified.
 - Require mods to run.
 
 The guide below is made for factorio servers on Linux. Windows guide might be added on a later date.
 
 # Requirements
-  1. A Discord Bot
-  2. A factorio server with RCON enabled
-  3. A factorio server with Logging enabled
-  4. Ability to host the bridge locally on the same machine as the game server.
-  5. Node.JS V14 (V16 is recommended!)
+
+1. A Discord Bot
+2. A factorio server with RCON enabled
+3. A factorio server with Logging enabled
+4. Ability to host the bridge locally on the same machine as the game server.
+5. Node.JS V14 (V16 is recommended!)
 
 # Setting up a Discord Application
 
@@ -28,22 +31,23 @@ Create a bot by pressing Add Bot and copy the token to somewhere for a while. Yo
 
 **Keep this token to yourself ONLY!**
 
-
 # Setting up RCON and Logging
+
 The Factorio server must have RCON and Logging enabled.
 Add these params to the factorio's run script.
 
-```--rcon-port <port>```	Port to use for RCON
-  
-```--rcon-password <pass>```	Password for RCON
+`--rcon-port <port>` Port to use for RCON
 
-```--console-log <path-to-file>```  File to log the chat messages in
+`--rcon-password <pass>` Password for RCON
+
+`--console-log <path-to-file>` File to log the chat messages in
 
 Full Example (including server params):
 
-```/opt/factorio/bin/64/factorio --start-server /opt/factorio/saves/map.zip --server-settings /opt/factorio/data/server-settings.json --rcon-port 8080 --rcon-password password --console-log /opt/factorio/Factorio-server.log```
+`/opt/factorio/bin/64/factorio --start-server /opt/factorio/saves/map.zip --server-settings /opt/factorio/data/server-settings.json --rcon-port 8080 --rcon-password password --console-log /opt/factorio/Factorio-server.log`
 
 # Dependencies
+
 Install or update NodeJS on Windows: [NodeJS Installer](https://nodejs.org/en/) (Version **14** or higher)
 
 Install or update NodeJS on Linux by running these 2 commands:
@@ -55,7 +59,6 @@ Install or update NodeJS on Linux by running these 2 commands:
 To verify node is installed run `node -v` in a terminal.
 
 Now, download and unzip the newest release to your VPS. Or clone the repo.
-
 
 ### Downloading the newest release
 
@@ -71,6 +74,7 @@ Run the following command within that directory to install the required packages
 `npm install`
 
 ### Cloning the repo using the terminal
+
 `sudo apt install git -y` to install git
 
 Run `git clone https://github.com/AGuyNamedJens/FactorioChatBot` once you're sure you're in the right location (Remember which folder is shown as repo name: `Cloning into <repo name>`)
@@ -86,11 +90,12 @@ Continue to [Configuration](https://github.com/AGuyNamedJens/FactorioChatBot#Con
 # Configuration
 
 See [CONFIG.MD](https://github.com/AGuyNamedJens/FactorioChatBot/blob/master/CONFIG.md) for configuring the bot!
+
 # Running the bot from console
 
 This will however stop the bot as soon as you hit CTRL+C or exit the terminal.
 
-`node .` or `node FactorioChatBot.js`. 
+`node .` or `node FactorioChatBot.js`.
 
 # Running the bot as a service
 

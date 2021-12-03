@@ -1,10 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help fix early issues!
-title: "[BUG]"
+title: '[BUG]'
 labels: ''
 assignees: AGuyNamedJens
-
 ---
 
 **Describe the bug**
